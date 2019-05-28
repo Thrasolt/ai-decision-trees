@@ -2,9 +2,11 @@
 __pycache__/
 *.py[cod]
 *$py.class
-Pipfile
-Pipfile.lock
+Pipfile*
 *.ows
+
+# IDE
+*.idea
 
 # C extensions
 *.so

@@ -60,7 +60,8 @@ class DataPoint:
 
     def calculate_decision_tree(self):
         values = self.to_values()
-        weights = np.array([3, 3, 5, 5, 2, 7, 9])
+        weights = np.array([0,5,1,5,2,1,4])
+        # weights = np.array([1,5,1,5,2,1,4])
         value = np.sum(values*weights)
         divisor = sum(weights*5)
         return int(round((value/divisor)*6))

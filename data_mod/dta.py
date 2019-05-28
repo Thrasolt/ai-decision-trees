@@ -5,9 +5,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score
 
-from data_mod.DataPoint import RULE_INDUCTION, RANDOM_FORESTS
+from data_mod.DataPoint import RULE_INDUCTION, RANDOM_FORESTS, DECISION_TREES
 from data_mod.fakeData import get_fake_dataframe
-df = get_fake_dataframe(50000, success_type=RANDOM_FORESTS)
+df = get_fake_dataframe(10000, success_type=RANDOM_FORESTS)
+df = get_fake_dataframe(10000, success_type=DECISION_TREES)
 
 
 """
@@ -25,9 +26,7 @@ dt_clf.fit(X_train, y_train)
 y_pred = dt_clf.predict(X_test)
 
 print(f"Decision Tree Accuracy is {accuracy_score(y_test, y_pred) * 100}%")
-
 rf_clf = RandomForestClassifier(n_estimators=100)
 rf_clf.fit(X_train, y_train)
 y_pred = rf_clf.predict(X_test)
-
 print(f"Random Forest Accuracy is {accuracy_score(y_test, y_pred) * 100}%")

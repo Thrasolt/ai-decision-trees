@@ -25,11 +25,11 @@ class DataPoint:
 
         self.attend_lecture_rate = attend_lecture_rate
         self.attend_practice_rate = attend_practice_rate
-        self.hours_studying=hours_studying
-        self.hours_exam_prep=hours_exam_prep
-        self.group_session=group_session
-        self.problem_sets_done_rate=problem_sets_done_rate
-        self.problem_sets_success_rate=problem_sets_success_rate
+        self.hours_studying = hours_studying
+        self.hours_exam_prep = hours_exam_prep
+        self.group_session = group_session
+        self.problem_sets_done_rate = problem_sets_done_rate
+        self.problem_sets_success_rate = problem_sets_success_rate
 
         self.success = self.calculate_success()
 
@@ -53,25 +53,25 @@ class DataPoint:
 
     def calculate_random_forests(self):
         values = self.to_values()
-        weights = np.array([3, 3, 5, 5, 2, 7, 9])
-        value = np.sum(values*weights)
-        divisor = sum(weights*5)
-        return int(round((value/divisor)*6))
+        weights = np.array([2, 3, 6, 4, 2, 3, 5])
+        value = np.sum(values * weights)
+        divisor = sum(weights * 5)
+        return int(round((value / divisor) * 6))
 
     def calculate_decision_tree(self):
         values = self.to_values()
-        weights = np.array([0,5,1,5,2,1,4])
+        weights = np.array([0, 5, 1, 5, 2, 1, 4])
         # weights = np.array([1,5,1,5,2,1,4])
-        value = np.sum(values*weights)
-        divisor = sum(weights*5)
-        return int(round((value/divisor)*6))
+        value = np.sum(values * weights)
+        divisor = sum(weights * 5)
+        return int(round((value / divisor) * 6))
 
     def __call__(self):
         return ','.join([str(v) for k, v in self.__dict__.items()])
 
     def to_dict(self):
         dic = self.__dict__
-        #dic.pop("success_type")
+        # dic.pop("success_type")
         return dic
 
     def to_values(self):

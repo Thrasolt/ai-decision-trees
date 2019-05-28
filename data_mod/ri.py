@@ -14,8 +14,6 @@ df = get_fake_dataframe(1000,success_type=RULE_INDUCTION)
 df = pd.read_csv("data_mod.csv")
 """
 
-
-
 X = df.values[:, :-1]  # Features
 Y = df.values[:, -1]  # Classes
 

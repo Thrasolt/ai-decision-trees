@@ -25,8 +25,8 @@ dt_clf.fit(X_train, y_train)
 
 y_pred = dt_clf.predict(X_test)
 
-print(f"Decision Tree Accuracy is {accuracy_score(y_test, y_pred) * 100}%")
+print(f"Decision Tree Accuracy is {accuracy_score(y_test, y_pred) * 100:.2f}%")
 rf_clf = RandomForestClassifier(n_estimators=100)
 rf_clf.fit(X_train, y_train)
 y_pred = rf_clf.predict(X_test)
-print(f"Random Forest Accuracy is {accuracy_score(y_test, y_pred) * 100}%")
+print(f"Random Forest Accuracy is {accuracy_score(y_test, y_pred) * 100:.2f}%")

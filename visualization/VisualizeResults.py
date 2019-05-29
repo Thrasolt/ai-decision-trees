@@ -30,7 +30,7 @@ class VisualizeResults:
         self.save = save
 
     def show_plotting(self):
-        df = pd.read_csv(f"../data_mod/{self.read_from}")
+        df = pd.read_csv(self.read_from)
         amountp = len(df[df.success >= self.success_value]).__index__()
         amountf = len(df[df.success < self.success_value]).__index__()
         passed = df[df.success >= self.success_value].sum()[1:8] / amountp

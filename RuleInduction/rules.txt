@@ -1,0 +1,54 @@
+IF problem_sets_success_rate==5 THEN success=1 
+IF attend_lecture_rate==4 AND problem_sets_done_rate==4 AND hours_studying==4 AND problem_sets_success_rate!=5 THEN success=2 
+IF hours_studying==5 AND problem_sets_done_rate==5 AND attend_lecture_rate==4 THEN success=2 
+IF hours_studying==5 AND attend_lecture_rate==5 AND problem_sets_done_rate==5 THEN success=2 
+IF problem_sets_done_rate==4 AND hours_studying==5 AND attend_lecture_rate==4 THEN success=2 
+IF attend_lecture_rate==5 AND hours_studying==5 AND problem_sets_done_rate==4 AND attend_practice_rate!=2 THEN success=2 
+IF hours_studying==4 AND problem_sets_done_rate==5 AND attend_lecture_rate==4 THEN success=2 
+IF hours_studying==4 AND attend_lecture_rate==5 AND problem_sets_done_rate==5 AND problem_sets_success_rate!=5 THEN success=2 
+IF attend_lecture_rate==5 AND attend_practice_rate==0 AND group_session==1 THEN success=2 
+IF hours_studying==3 AND problem_sets_done_rate==5 AND attend_lecture_rate==4 THEN success=3 
+IF hours_studying==3 AND problem_sets_done_rate==4 AND attend_lecture_rate==5 THEN success=3 
+IF problem_sets_done_rate==3 AND attend_lecture_rate==5 AND hours_studying==3 THEN success=3 
+IF hours_studying==3 AND problem_sets_done_rate==4 AND attend_lecture_rate==4 AND hours_exam_prep!=4 THEN success=3 
+IF problem_sets_done_rate==3 AND hours_studying==4 AND attend_lecture_rate==4 THEN success=3 
+IF hours_studying==3 AND problem_sets_done_rate==5 AND attend_lecture_rate==5 AND problem_sets_success_rate!=5 THEN success=3 
+IF problem_sets_done_rate==3 AND attend_lecture_rate==5 AND hours_studying==5 AND group_session!=3 THEN success=3 
+IF problem_sets_done_rate==3 AND attend_lecture_rate==4 AND group_session==2 THEN success=3 
+IF problem_sets_done_rate==3 AND hours_studying==4 AND attend_lecture_rate==5 THEN success=3 
+IF problem_sets_done_rate==3 AND hours_studying==5 AND problem_sets_success_rate==0 AND attend_lecture_rate==4 THEN success=3 
+IF problem_sets_done_rate==3 AND attend_lecture_rate==4 AND hours_studying==3 THEN success=3 
+IF problem_sets_done_rate==3 AND problem_sets_success_rate==1 AND attend_lecture_rate==4 THEN success=3 
+IF attend_lecture_rate==3 AND problem_sets_done_rate==5 AND hours_studying==2 THEN success=4 
+IF attend_lecture_rate==3 AND problem_sets_success_rate==2 AND attend_practice_rate==1 THEN success=4 
+IF attend_lecture_rate==3 AND problem_sets_done_rate==4 AND hours_studying==2 THEN success=4 
+IF attend_lecture_rate==3 AND hours_studying==5 AND attend_practice_rate==3 THEN success=4 
+IF hours_studying==2 AND problem_sets_done_rate==3 AND attend_lecture_rate==4 THEN success=4 
+IF attend_lecture_rate==3 AND problem_sets_done_rate==5 AND hours_exam_prep==4 THEN success=4 
+IF hours_studying==2 AND problem_sets_done_rate==4 AND attend_lecture_rate==4 THEN success=4 
+IF hours_studying==2 AND attend_lecture_rate==5 AND attend_practice_rate==2 THEN success=4 
+IF attend_lecture_rate==3 AND problem_sets_done_rate==3 AND hours_studying==2 THEN success=4 
+IF attend_lecture_rate==3 AND problem_sets_done_rate==4 AND problem_sets_success_rate==4 THEN success=4 
+IF attend_lecture_rate==3 AND problem_sets_done_rate==5 AND problem_sets_success_rate==1 THEN success=4 
+IF attend_lecture_rate==3 AND problem_sets_done_rate==5 AND problem_sets_success_rate==3 THEN success=4 
+IF attend_lecture_rate==3 AND problem_sets_done_rate==3 AND hours_studying==3 AND group_session!=4 THEN success=4 
+IF attend_lecture_rate==3 AND problem_sets_done_rate==4 AND group_session==1 AND hours_exam_prep!=4 THEN success=4 
+IF hours_studying==2 AND attend_lecture_rate==5 AND problem_sets_done_rate==3 THEN success=4 
+IF attend_lecture_rate==3 AND problem_sets_done_rate==3 AND hours_studying==4 THEN success=4 
+IF hours_studying==2 AND attend_lecture_rate==5 AND problem_sets_done_rate==4 AND problem_sets_success_rate!=5 THEN success=4 
+IF attend_lecture_rate==3 AND problem_sets_done_rate==5 AND hours_exam_prep==0 AND group_session!=4 THEN success=4 
+IF problem_sets_done_rate==5 AND hours_studying==2 AND attend_lecture_rate==4 THEN success=4 
+IF attend_lecture_rate==3 AND hours_exam_prep==2 AND hours_studying==5 THEN success=4 
+IF attend_lecture_rate==3 AND group_session==4 AND attend_practice_rate==4 THEN success=4 
+IF problem_sets_done_rate==5 AND attend_lecture_rate==3 AND group_session==2 AND attend_practice_rate!=5 THEN success=4 
+IF problem_sets_done_rate==5 AND attend_lecture_rate==3 AND hours_studying==3 AND hours_exam_prep!=5 THEN success=4 
+IF hours_studying==2 AND attend_lecture_rate==5 AND group_session==1 AND attend_practice_rate!=5 THEN success=4 
+IF problem_sets_done_rate==2 AND problem_sets_success_rate!=5 THEN success=5 
+IF problem_sets_done_rate==0 AND problem_sets_success_rate!=5 THEN success=5 
+IF problem_sets_done_rate==1 AND problem_sets_success_rate!=5 THEN success=5 
+IF attend_lecture_rate==2 AND problem_sets_success_rate!=5 THEN success=5 
+IF attend_lecture_rate==0 AND problem_sets_success_rate!=5 THEN success=5 
+IF attend_lecture_rate==1 AND problem_sets_success_rate!=5 THEN success=5 
+IF hours_studying==0 AND problem_sets_success_rate!=5 THEN success=5 
+IF hours_studying==1 AND problem_sets_success_rate!=5 THEN success=5 
+IF TRUE THEN success=5 

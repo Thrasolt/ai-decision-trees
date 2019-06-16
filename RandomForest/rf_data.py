@@ -1,7 +1,7 @@
-from data_mod.DataPoint import DECISION_TREES
-from data_mod.fakeData import get_fake_dataframe
+import DataModels.DataPoint
+from DataModels.fakeData import get_fake_dataframe
 
 n = 50000
 
-df = get_fake_dataframe(n, DECISION_TREES)
-df.to_csv("dt_data.csv", sep=',')
+df = get_fake_dataframe(n, DataModels.DataPoint.RANDOM_FORESTS)
+df.to_csv("rf_data.csv", sep=',')

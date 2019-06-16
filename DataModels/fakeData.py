@@ -1,6 +1,7 @@
-from random import randint
 import pandas as pd
-from hsdgjsgdhjd.DataPoint import DataPoint, RANDOM_FORESTS
+
+from random import randint
+from DataModels.DataPoint import DataPoint, RANDOM_FORESTS
 
 
 def get_fake_dataframe(n, success_type=RANDOM_FORESTS):

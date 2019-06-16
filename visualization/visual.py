@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df_initial = pd.read_csv('../data_mod/data_mod.csv', index_col=0)
+df_initial = pd.read_csv('../DataModels/DataModels.csv', index_col=0)
 
 
 def bars(df):
